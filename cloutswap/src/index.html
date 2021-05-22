@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- from https://stackoverflow.com/a/38377286/8537707 -->
+        <style>
+          .swapper-selector {
+            background: #ededed;
+            cursor: pointer;
+          }
+
+          .swapper-selector:disabled /* Used to highlight the currently selected sell or buy option */ {
+            background: #00e020;
+            -webkit-box-shadow: inset 0px 0px 5px #00ff00;
+               -moz-box-shadow: inset 0px 0px 5px #00ff00;
+                    box-shadow: inset 0px 0px 5px #00ff00;
+            outline: none;
+            cursor: default;
+          }
+        </style>
+    </head>
+    <body>
+      <div><!-- Swapper entry div -->
+        <script src="main.js" async></script>
+        <div><!-- Buy / Sell selection boxes -->
+          <button type="button" class="swapper-selector" disabled="" id="swapper-selector-buy">Buy</button>
+          <button type="button" class="swapper-selector" id="swapper-selector-sell">Sell</button>
+        </div>
+        <div id="swapper-inputs">
+          <div id="swapper-eth"><!-- ETH tree, used to reorder them -->
+            <p id="swapper-eth-balance"><a id="swapper-eth-amount">0</a> ETH<br/></p>
+            <svg width="16px" height="26px" viewBox="0 0 256 417" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            	<g>
+            		<polygon fill="#343434" points="127.9611 0 125.1661 9.5 125.1661 285.168 127.9611 287.958 255.9231 212.32"/>
+            		<polygon fill="#8C8C8C" points="127.962 0 0 212.32 127.962 287.959 127.962 154.158"/>
+            		<polygon fill="#3C3C3B" points="127.9611 312.1866 126.3861 314.1066 126.3861 412.3056 127.9611 416.9066 255.9991 236.5866"/>
+            		<polygon fill="#8C8C8C" points="127.962 416.9052 127.962 312.1852 0 236.5852"/>
+            		<polygon fill="#141414" points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"/>
+            		<polygon fill="#393939" points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"/>
+            	</g>
+            </svg>
+            <input type="text" id="swapper-eth-input" value="1"/> ETH
+          </div>
+          <div id="swapper-xxx"><!-- xxx tree, used to reorder them -->
+            <p id="swapper-xxx-balance" hidden><a id="swapper-xxx-amount">0</a> xxx<br/></p>
+            <!-- Your logo there ? -->
+            <input type="text" id="swapper-xxx-input" readonly/> xxx
+          </div>
+        </div>
+        <div><!-- Infos -->
+          Slippage: <input type="number" id="swapper-slippage" name="slippage" placeholder="0.5%" min="0" max="5" step="0.1"/><br/>
+          Price impact: <a id="swapper-price-impact">0%</a><!-- a tag used to color the price impact when it's going high --><br/>
+        </div>
+        <button type="button" id="swapper-metamask-activation">Connect to MetaMask</button>
+        <div id="swapper-swapping-btns" hidden><!-- Enabled when the wallet is connected -->
+          <button type="button" id="swapper-swap">Swap</button>
+        </div>
+      </div>
+    </body>
+</html>

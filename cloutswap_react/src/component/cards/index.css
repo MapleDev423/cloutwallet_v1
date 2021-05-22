@@ -1,0 +1,296 @@
+.swapcard_container {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 24px 32px;
+  height: fit-content;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  width: 464px;
+}
+
+.swapcard_top {
+  width: 100%;
+}
+
+.swapcard_top > .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.swapcard_top > .header > p {
+  margin-left: auto;
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #333333;
+}
+
+.swapcard_top > .header > img {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.swap_values > .top > .info > .label {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #4f4f4f;
+  margin: 4px 0px;
+}
+
+.swap_values > .top > .info > .amount {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #4f4f4f;
+  width: 200px;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+}
+
+.swap_values > .top > .info > .balance {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #828282;
+  margin: 4px 0px;
+}
+
+.swap_values > .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 500;
+}
+
+.swap_values > .bottom {
+  display: flex;
+  align-items: center;
+  z-index: 40;
+  justify-content: space-between;
+}
+
+.swap_values {
+  margin-top: 24px;
+}
+
+.swap_values > .bottom > .info > .label {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #4f4f4f;
+  margin: 4px 0px;
+}
+
+.swap_values > .bottom > .info > .amount {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #4f4f4f;
+  width: 200px;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+}
+
+/* Hide Arrows From Input Number Start */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* Hide Arrows From Input Number End */
+
+.swap_values > .bottom > .info > .balance {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #828282;
+  margin: 4px 0px;
+}
+
+.swap_values > .bottom > .info {
+  width: 287px;
+  max-width: 98%;
+}
+
+.select_token {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  background: #4f4f4f;
+  color: #ffffff;
+  border-radius: 10px;
+  height: fit-content;
+  width: 100%;
+}
+
+.swap_values > .middle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 4px 0px;
+}
+
+.swap_values > .middle > img {
+  margin-left: auto;
+  z-index: 2;
+}
+
+.swap_values > .middle > .mid_line {
+  position: absolute;
+  width: 416px;
+  height: 1px;
+  left: calc(50% - 416px / 2);
+  top: 19px;
+  background: #bdbdbd;
+  z-index: 1;
+}
+
+.swapcard_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  background: #0469d9;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 32px 0px;
+  width: 100%;
+}
+
+.swapcard_btn_red {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  background: linear-gradient(274.04deg, #ff8597 -17.72%, #ff3a58 113.66%);
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 32px 0px;
+  width: 100%;
+}
+
+.swapcard_btn_red {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
+
+.swapcard_btn_red:active {
+  background: linear-gradient(274.04deg, #ff8597 20%, #ff3a58 80%);
+}
+
+.swapcard_btn:active {
+  background: #0469d9aa;
+}
+
+.swapcard_btn > p {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+}
+
+.selectHeader {
+  width: 200px;
+  position: relative;
+  z-index: 30;
+}
+.selectHeader button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.drop_icon {
+  position: absolute;
+  right: 20px;
+  transition: all 0.5s;
+}
+
+.downicon {
+  transform: rotate(180deg);
+}
+
+.backBg {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 10;
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+
+.statistic {
+  color: #828282;
+  width: 350px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.statistic p {
+  margin-right: 10px;
+}
+
+.statistic > .flex > p {
+  width: 100px;
+}
+
+.statistic img {
+  cursor: pointer;
+}

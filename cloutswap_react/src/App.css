@@ -1,0 +1,81 @@
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --unselected: #a7ffeb;
+  --highlight-bg: #64ffda;
+  --text: #1de9b6;
+  --selected: #00bfa5;
+  --body-bg: #212121;
+  --card-bg: #424242;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #f1f7fd;
+}
+
+#root {
+  height: 100%;
+  font-family: "Varela Round", sans-serif;
+  background-color: #f1f7fd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px calc(100% - 70px);
+  background-color: #f1f7fd;
+}
+
+.App > .header {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* box-shadow: 0.1em 0.1em 0.6em #d2d2d2; */
+  justify-content: center;
+  background-color: #f1f7fd;
+  padding: 0 20px;
+}
+
+.App > .app_body {
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+}
+
+.App > .app_body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.App > .app_body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.App > .app_body > .content {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}

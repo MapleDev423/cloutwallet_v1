@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949320661550",
+    "project_id": "cloutwallet-price-tracker",
+    "storage_bucket": "cloutwallet-price-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949320661550:android:a476e0fc8b006f3dfbfdbf",
+        "android_client_info": {
+          "package_name": "com.cloutwallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949320661550-8u018bkb3mn1dkk77k9lf49b70jnvqci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk3jvyjcOnizE1FtCX9bFk23DmJsonGf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949320661550-8u018bkb3mn1dkk77k9lf49b70jnvqci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

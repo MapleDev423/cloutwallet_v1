@@ -1,0 +1,57 @@
+.navbar {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.link.active {
+  padding: 8px 16px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #0469d9;
+  box-shadow: inset 0px -2px 0px #ffffff;
+  margin: 0px 16px;
+}
+
+.link {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  padding: 8px 16px;
+  color: #4f4f4f;
+  background-color: #f1f7fd;
+  border-radius: 10px;
+  margin: 0px 16px;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 116px;
+}
+
+.navlinks > .brand > p {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 28px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #0469d9;
+}
+.navbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tinyEasySwapper",
+  "version": "1.0.0",
+  "author": "Jorropo <jorropo.pgm@gmail.com>",
+  "license": "none",
+  "private": true,
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.13.5"
+  },
+  "scripts": {
+    "build": "yarn run build:js && yarn run build:html",
+    "build:prod": "yarn run build:js:prod && yarn run build:html",
+    "build:html": "mkdir -p dist && html-minifier -c .html-minifier.conf.json src/index.html -o dist/index.html",
+    "build:js:prod": "mkdir -p dist && browserify src/index.js | uglifyjs -o dist/main.js",
+    "build:js": "mkdir -p dist && browserify src/index.js > dist/main.js"
+  },
+  "dependencies": {
+    "@metamask/detect-provider": "^1.2.0",
+    "web3": "^1.3.5"
+  }
+}

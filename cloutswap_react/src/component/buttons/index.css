@@ -1,0 +1,22 @@
+.simple_button > p {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #4f4f4f;
+}
+
+.simple_button {
+  padding: 8px 16px;
+  background-color: #f1f7fd;
+  box-shadow: inset 0px -2px 0px #f1f7fd;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0px 16px;
+}
+
+.simple_button:active {
+  background: #e6e6e6;
+}

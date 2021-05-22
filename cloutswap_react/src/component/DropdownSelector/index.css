@@ -1,0 +1,49 @@
+.selector_container .dropdown div > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.selector_container .dropdown div {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.selector_container .dropdown {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.selectChild {
+  position: absolute;
+  width: calc(100% - 5px);
+  top: 45px;
+  left: 3px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 50;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+
+.selectChild > div > img {
+  width: 30px;
+  height: 30px;
+}
+
+.selectChild > div {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.selectChild > div:hover {
+  background-color: #e6e6e6;
+}
